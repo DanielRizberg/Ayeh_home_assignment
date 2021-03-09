@@ -15,17 +15,17 @@ namespace jsonDb
         {
             _filePath = filePath;
             loadData();
-            updateEditStateWithInitState();
+            updateJsonFile();
         }
 
         private void loadData()
         {
             dbObject = JsonConvert.DeserializeObject<dbObject>(File.ReadAllText(_filePath));
             dbObject.editState.AddRange(dbObject.initialState);
-            updateEditStateWithInitState();
+            updateJsonFile();
         }
 
-        private void updateEditStateWithInitState()
+        private void updateJsonFile()
         {
             var text = JsonConvert.SerializeObject(dbObject);
             File.WriteAllText(_filePath, text);
@@ -38,12 +38,31 @@ namespace jsonDb
 
         public bool deletePost(post post)
         {
+            bool retVal = false;
             var obj = dbObject.editState.Where(x => x.id == post.id).FirstOrDefault();
             if (obj!=null)
             {
-                return dbObject.editState.Remove(obj);
+                retVal= dbObject.editState.Remove(obj);
             }
-            return false;
+            updateJsonFile();
+            return retVal;
         }
+        public bool deleteComment(commentDto commentDeleteDto)
+        {
+            bool retVal = false;
+            var post = dbObject.editState.Where(x => x.id == commentDeleteDto.postId).FirstOrDefault();
+            if (post==null)
+            {
+                return retVal;
+            }
+            var comment = post.comments.Where(x => x.id == commentDeleteDto.id).FirstOrDefault();
+            if (comment!=null)
+            {
+                retVal= post.comments.Remove(comment);
+            }
+            updateJsonFile();
+            return retVal;
+        }
+
     }
 }
