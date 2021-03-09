@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "FHE15hKOfrQId6sPPR8sMRsDWOrvcVLO/wlwKpJU7y1U9zsSh6tntYXLihwGn9QexLM1R38WDsJHU3zo05B/9Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\jsonDb\\jsonDb.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\melts\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

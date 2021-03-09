@@ -1,0 +1,46 @@
+{
+  "intialState": {
+    "posts": [
+      {
+        "id": 1,
+        "author": "mike",
+        "title": "some post",
+        "comments": [
+          {
+            "id": 1,
+            "name": "daniel",
+            "email": "d@gmail.com",
+            "body": "like this"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "author": "mike",
+        "title": "some post",
+        "comments": [
+          {
+            "id": 1,
+            "name": "daniel",
+            "email": "d@gmail.com",
+            "body": "like this"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "author": "mike",
+        "title": "some post",
+        "comments": [
+          {
+            "id": 1,
+            "name": "daniel",
+            "email": "d@gmail.com",
+            "body": "like this"
+          }
+        ]
+      }
+    ]
+  },
+  "editState": {}
+}
