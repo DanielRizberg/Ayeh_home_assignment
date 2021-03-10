@@ -4,7 +4,9 @@ using System.Text;
 
 namespace models
 {
-    class commentDeleteDto
+   public class commentDto:comment
     {
+      
+        public int postId { get; set; }
     }
 }
