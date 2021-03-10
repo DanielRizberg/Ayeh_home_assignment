@@ -4,13 +4,22 @@ using System.Text;
 
 namespace models
 {
-  public  class queryDto
+    public class queryDto
     {
-        public string sortProp { get; set; }
-        public string sortDir  { get; set; }
+        public filterOp sortProp { get; set; }
+        public string sortDir { get; set; }
 
-        public string searchProp { get; set; }
+        public filterOp searchProp { get; set; }
 
         public string searchVal { get; set; }
     }
+    public enum filterOp
+    {
+        author,
+        title,
+        none
+    }
 }
+  
+
+

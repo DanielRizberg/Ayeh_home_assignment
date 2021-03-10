@@ -127,7 +127,7 @@ namespace jsonDb
         {
             dbObject.editState.AddRange(dbObject.initialState);
             updateJsonFile();
-            return getData(new queryDto { searchProp = filterOp.none, sortProp = filterOp.none, d })
+            return getData(new queryDto { searchProp = filterOp.none, sortProp = filterOp.none });
         }
     }
 }

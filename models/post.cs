@@ -8,7 +8,7 @@ namespace models
     {
         public int id { get; set; }
         public string author { get; set; }
-        public int title { get; set; }
+        public string title { get; set; }
         public bool favorite { get; set; }
         public List<comment> comments { get; set; }
 
