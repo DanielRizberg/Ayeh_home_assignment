@@ -131,7 +131,7 @@ namespace jsonDb
             dbObject.editState.Clear();
             dbObject.editState.AddRange(dbObject.initialState);
             updateJsonFile();
-            return getData(new queryDto { searchProp = filterOp.none, sortProp = filterOp.none });
+            return getData(new queryDto { searchProp = filterOp.none, sortProp = filterOp.none,sortDir="asc" });
         }
     }
 }
