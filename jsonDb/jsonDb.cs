@@ -14,8 +14,8 @@ namespace jsonDb
         dbObject dbObject;
         Dictionary<filterOp, Func<post, queryDto, bool>> filtesMap = new Dictionary<filterOp, Func<post, queryDto, bool>>
         {
-            {filterOp.author,(x,y)=>x.author==y.searchVal } ,
-            {filterOp.title,(x,y)=>x.title==y.searchVal } ,
+            {filterOp.author,(x,y)=>x.author.Contains(y.searchVal) } ,
+            {filterOp.title,(x,y)=>x.title.Contains(y.searchVal) } ,
         };
         Dictionary<filterOp, Func<post, object>> sortMap = new Dictionary<filterOp, Func<post, object>>
         {
@@ -34,7 +34,7 @@ namespace jsonDb
         {
             var text=File.ReadAllText(_filePath);
             dbObject = JsonConvert.DeserializeObject<dbObject>(text);
-          
+            dbObject.editState = new List<post>();
             dbObject.editState.AddRange(dbObject.initialState);
             updateJsonFile();
         }

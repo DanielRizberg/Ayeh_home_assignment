@@ -1,1 +1,244 @@
-{"initialState":[{"id":1,"author":"mike","title":"some post","favorite":false,"comments":[{"id":1,"name":"daniel","email":"d@gmail.com","body":"like this"}]},{"id":2,"author":"mike","title":"some post","favorite":false,"comments":[{"id":1,"name":"daniel","email":"d@gmail.com","body":"like this"}]},{"id":3,"author":"mike","title":"some post","favorite":false,"comments":[{"id":1,"name":"daniel","email":"d@gmail.com","body":"like this"}]}],"editState":[{"id":1,"author":"mike","title":"some post","favorite":false,"comments":[{"id":1,"name":"daniel","email":"d@gmail.com","body":"like this"}]},{"id":2,"author":"mike","title":"some post","favorite":false,"comments":[{"id":1,"name":"daniel","email":"d@gmail.com","body":"like this"}]},{"id":3,"author":"mike","title":"some post","favorite":false,"comments":[{"id":1,"name":"daniel","email":"d@gmail.com","body":"like this"}]}]}
+{
+  "initialState": [
+    {
+      "id": 1,
+      "author": "mike",
+      "title": "star wars",
+      "favorite": false,
+      "comments": [
+        {
+          "id": 1,
+          "name": "john",
+          "email": "d@gmail.com",
+          "body": "like this"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "author": "daniel",
+      "title": "star trek",
+      "favorite": false,
+      "comments": [
+        {
+          "id": 1,
+          "name": "nachson",
+          "email": "d@gmail.com",
+          "body": "like this"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "author": "shlomo",
+      "title": "star gate",
+      "favorite": false,
+      "comments": [
+        {
+          "id": 1,
+          "name": "daniel",
+          "email": "d@gmail.com",
+          "body": "like this"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "author": "shlomo",
+      "title": "the expanse",
+      "favorite": false,
+      "comments": [
+        {
+          "id": 1,
+          "name": "daniel",
+          "email": "d@gmail.com",
+          "body": "like this"
+        }
+      ]
+    }
+  ],
+  "editState": [
+    {
+      "id": 2,
+      "author": "mike",
+      "title": "some post",
+      "favorite": false,
+      "comments": [
+        {
+          "id": 1,
+          "name": "daniel",
+          "email": "d@gmail.com",
+          "body": "like this"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "author": "mike",
+      "title": "some post",
+      "favorite": false,
+      "comments": [
+        {
+          "id": 1,
+          "name": "daniel",
+          "email": "d@gmail.com",
+          "body": "like this"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "author": "mike",
+      "title": "some post",
+      "favorite": false,
+      "comments": [
+        {
+          "id": 1,
+          "name": "daniel",
+          "email": "d@gmail.com",
+          "body": "like this"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "author": "mike",
+      "title": "some post",
+      "favorite": false,
+      "comments": [
+        {
+          "id": 1,
+          "name": "daniel",
+          "email": "d@gmail.com",
+          "body": "like this"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "author": "daniel",
+      "title": "some post",
+      "favorite": false,
+      "comments": [
+        {
+          "id": 1,
+          "name": "nachson",
+          "email": "d@gmail.com",
+          "body": "like this"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "author": "shlomo",
+      "title": "some post",
+      "favorite": false,
+      "comments": [
+        {
+          "id": 1,
+          "name": "daniel",
+          "email": "d@gmail.com",
+          "body": "like this"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "author": "mike",
+      "title": "some post",
+      "favorite": false,
+      "comments": [
+        {
+          "id": 1,
+          "name": "john",
+          "email": "d@gmail.com",
+          "body": "like this"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "author": "daniel",
+      "title": "some post",
+      "favorite": false,
+      "comments": [
+        {
+          "id": 1,
+          "name": "nachson",
+          "email": "d@gmail.com",
+          "body": "like this"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "author": "shlomo",
+      "title": "some post",
+      "favorite": false,
+      "comments": [
+        {
+          "id": 1,
+          "name": "daniel",
+          "email": "d@gmail.com",
+          "body": "like this"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "author": "mike",
+      "title": "star wars",
+      "favorite": false,
+      "comments": [
+        {
+          "id": 1,
+          "name": "john",
+          "email": "d@gmail.com",
+          "body": "like this"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "author": "daniel",
+      "title": "star trek",
+      "favorite": false,
+      "comments": [
+        {
+          "id": 1,
+          "name": "nachson",
+          "email": "d@gmail.com",
+          "body": "like this"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "author": "shlomo",
+      "title": "star gate",
+      "favorite": false,
+      "comments": [
+        {
+          "id": 1,
+          "name": "daniel",
+          "email": "d@gmail.com",
+          "body": "like this"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "author": "shlomo",
+      "title": "the expanse",
+      "favorite": false,
+      "comments": [
+        {
+          "id": 1,
+          "name": "daniel",
+          "email": "d@gmail.com",
+          "body": "like this"
+        }
+      ]
+    }
+  ]
+}
