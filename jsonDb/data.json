@@ -1,1 +1,104 @@
-{"initialState":[{"id":1,"author":"mike","title":"star wars","favorite":true,"comments":[{"id":1,"name":"john","email":"d@gmail.com","body":"like this"}]},{"id":2,"author":"daniel","title":"star trek","favorite":false,"comments":[]},{"id":3,"author":"shlomo","title":"star gate","favorite":false,"comments":[{"id":1,"name":"daniel","email":"d@gmail.com","body":"like this"}]},{"id":4,"author":"shlomo","title":"the expanse","favorite":false,"comments":[{"id":1,"name":"daniel","email":"d@gmail.com","body":"like this"}]}],"editState":[{"id":1,"author":"mike","title":"star wars","favorite":true,"comments":[{"id":1,"name":"john","email":"d@gmail.com","body":"like this"}]},{"id":2,"author":"daniel","title":"star trek","favorite":false,"comments":[]},{"id":3,"author":"shlomo","title":"star gate","favorite":false,"comments":[{"id":1,"name":"daniel","email":"d@gmail.com","body":"like this"}]},{"id":4,"author":"shlomo","title":"the expanse","favorite":false,"comments":[{"id":1,"name":"daniel","email":"d@gmail.com","body":"like this"}]}]}
+{
+  "initialState": [
+    {
+      "id": 1,
+      "author": "mike",
+      "title": "star wars",
+      "favorite": true,
+      "comments": [
+        {
+          "id": 1,
+          "name": "john",
+          "email": "d@gmail.com",
+          "body": "like this"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "author": "daniel",
+      "title": "star trek",
+      "favorite": false,
+      "comments": []
+    },
+    {
+      "id": 3,
+      "author": "shlomo",
+      "title": "star gate",
+      "favorite": false,
+      "comments": [
+        {
+          "id": 1,
+          "name": "daniel",
+          "email": "d@gmail.com",
+          "body": "like this"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "author": "shlomo",
+      "title": "the expanse",
+      "favorite": false,
+      "comments": [
+        {
+          "id": 1,
+          "name": "daniel",
+          "email": "d@gmail.com",
+          "body": "like this"
+        }
+      ]
+    }
+  ],
+  "editState": [
+    {
+      "id": 1,
+      "author": "mike",
+      "title": "star wars",
+      "favorite": true,
+      "comments": [
+        {
+          "id": 1,
+          "name": "john",
+          "email": "d@gmail.com",
+          "body": "like this"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "author": "daniel",
+      "title": "star trek",
+      "favorite": false,
+      "comments": []
+    },
+    {
+      "id": 3,
+      "author": "shlomo",
+      "title": "star gate",
+      "favorite": false,
+      "comments": [
+        {
+          "id": 1,
+          "name": "daniel",
+          "email": "d@gmail.com",
+          "body": "like this"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "author": "shlomo",
+      "title": "the expanse",
+      "favorite": false,
+      "comments": [
+        {
+          "id": 1,
+          "name": "daniel",
+          "email": "d@gmail.com",
+          "body": "like this"
+        }
+      ]
+    }
+  ]
+}

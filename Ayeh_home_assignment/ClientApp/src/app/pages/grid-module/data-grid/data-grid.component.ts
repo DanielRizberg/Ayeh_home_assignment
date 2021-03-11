@@ -21,4 +21,8 @@ export class DataGridComponent implements OnInit {
     };
     this.apiService.getData(request).subscribe((x) => (this.data = x.posts));
   }
+
+  getRandomImage(){
+    return `https://picsum.photos/150/150/?random&t=${new Date().getTime()}`
+  }
 }

@@ -1,3 +1,14 @@
+<button class="button reset-button">reset</button>
+
+<div style="margin-top: 8px; margin-bottom: 8px;width: 100%;">
+  <label style="font-weight: bold;width: 25%;">search by (Athor/title)</label>
+  &nbsp;&nbsp;
+  <input
+    class="search-input"
+    placeholder="type somthing to filter data"
+    type="text"
+  />
+</div>
 <table class="post-grid" id="grid">
   <thead>
     <tr>
@@ -12,11 +23,14 @@
   <tbody>
     <tr *ngFor="let item of data">
       <td><i class="fa fa-star" [ngClass]="{ checked: item.favorite }"></i></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>
+        <a>{{ item.title }}</a>
+      </td>
+      <td>{{ item.author }}</td>
+      <td>{{ item.comments.length }}</td>
+
+      <td><img loading="lazy" [src]="getRandomImage()" alt="not found" /></td>
+      <td><i class="fa fa-trash"></i></td>
     </tr>
   </tbody>
 </table>
