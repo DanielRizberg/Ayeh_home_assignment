@@ -23,21 +23,21 @@ namespace Ayeh_home_assignment.Controllers
         public ObjectResult getData(queryDto query)
         {
             var dbResult = _db.getData(query);
-            return new ObjectResult(dbResult);
+            return reaultCreator(dbResult);
         }
         [Route("deletePost")]
         [HttpPost]
         public ObjectResult deletePost(post post)
         {
             var dbResult = _db.deletePost(post);
-            return new ObjectResult(dbResult);
+            return reaultCreator(dbResult);
         }
         [HttpPost]
         [Route("deleteComment")]
         public ObjectResult deleteComment(commentDto commentDeleteDto)
         {
             var dbResult = _db.deleteComment(commentDeleteDto);
-            return new ObjectResult(dbResult);
+            return reaultCreator(dbResult);
         }
 
         [Route("reset")]
@@ -45,7 +45,7 @@ namespace Ayeh_home_assignment.Controllers
         public ObjectResult reset()
         {
             var dbResult = _db.reset();
-            return new ObjectResult(dbResult);
+            return reaultCreator(dbResult);
         }
 
         [Route("mark")]
@@ -53,11 +53,11 @@ namespace Ayeh_home_assignment.Controllers
         public ObjectResult markPost(post post)
         {
             var dbResult = _db.markPost(post);
-            return new ObjectResult(dbResult);
+            return reaultCreator(dbResult);
 
         }
 
-        private ObjectResult returnObjectResult<T>(T Input)
+        private ObjectResult reaultCreator<T>(T Input)
         {
             return new ObjectResult(Input);
         }
