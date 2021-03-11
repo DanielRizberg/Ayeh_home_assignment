@@ -11,6 +11,19 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Interfaces.dll": {}
+        }
+      },
       "models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -55,6 +68,11 @@
         "packageIcon.png"
       ]
     },
+    "Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../Interfaces/Interfaces.csproj",
+      "msbuildProject": "../Interfaces/Interfaces.csproj"
+    },
     "models/1.0.0": {
       "type": "project",
       "path": "../models/models.csproj",
@@ -63,6 +81,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Interfaces >= 1.0.0",
       "Newtonsoft.Json >= 12.0.3",
       "models >= 1.0.0"
     ]
@@ -99,6 +118,9 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
+            "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\Interfaces\\Interfaces.csproj": {
+              "projectPath": "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\Interfaces\\Interfaces.csproj"
+            },
             "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\models\\models.csproj": {
               "projectPath": "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\models\\models.csproj"
             }

@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using Interfaces;
 using models;
 using Newtonsoft.Json;
 namespace jsonDb
 {
-    public class jsonDb
+    public class jsonDb: IAyehJsonDb
     {
         string _filePath;
         dbObject dbObject;
@@ -116,7 +117,7 @@ namespace jsonDb
             var obj = dbObject.editState.Where(x => x.id == post.id).FirstOrDefault();
             if (obj != null)
             {
-                obj.favorite = true;
+                obj.favorite = post.favorite;
                 retVal = true;
             }
             updateJsonFile();
@@ -125,6 +126,7 @@ namespace jsonDb
 
         public DTO reset()
         {
+            dbObject.editState.Clear();
             dbObject.editState.AddRange(dbObject.initialState);
             updateJsonFile();
             return getData(new queryDto { searchProp = filterOp.none, sortProp = filterOp.none });

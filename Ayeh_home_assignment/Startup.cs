@@ -5,7 +5,8 @@ using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-
+using Interfaces;
+using jsonDb;
 namespace Ayeh_home_assignment
 {
     public class Startup
@@ -25,6 +26,9 @@ namespace Ayeh_home_assignment
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "ClientApp/dist";
+            });
+            services.AddSingleton<IAyehJsonDb>(op => {
+                return new jsonDb.jsonDb(Configuration.GetConnectionString("default"));
             });
         }
 
