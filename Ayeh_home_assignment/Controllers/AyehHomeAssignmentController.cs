@@ -47,5 +47,19 @@ namespace Ayeh_home_assignment.Controllers
             var dbResult = _db.reset();
             return new ObjectResult(dbResult);
         }
+
+        [Route("mark")]
+        [HttpPost]
+        public ObjectResult markPost(post post)
+        {
+            var dbResult = _db.markPost(post);
+            return new ObjectResult(dbResult);
+
+        }
+
+        private ObjectResult returnObjectResult<T>(T Input)
+        {
+            return new ObjectResult(Input);
+        }
     }
 }
