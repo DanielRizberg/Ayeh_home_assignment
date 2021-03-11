@@ -1,0 +1,14 @@
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\jsonDb\bin\Debug\netcoreapp3.1\jsonDb.deps.json
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\jsonDb\bin\Debug\netcoreapp3.1\jsonDb.dll
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\jsonDb\bin\Debug\netcoreapp3.1\jsonDb.pdb
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\jsonDb\bin\Debug\netcoreapp3.1\Interfaces.dll
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\jsonDb\bin\Debug\netcoreapp3.1\models.dll
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\jsonDb\bin\Debug\netcoreapp3.1\Interfaces.pdb
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\jsonDb\bin\Debug\netcoreapp3.1\models.pdb
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\jsonDb\obj\Debug\netcoreapp3.1\jsonDb.csprojAssemblyReference.cache
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\jsonDb\obj\Debug\netcoreapp3.1\jsonDb.AssemblyInfoInputs.cache
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\jsonDb\obj\Debug\netcoreapp3.1\jsonDb.AssemblyInfo.cs
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\jsonDb\obj\Debug\netcoreapp3.1\jsonDb.csproj.CoreCompileInputs.cache
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\jsonDb\obj\Debug\netcoreapp3.1\jsonDb.csproj.CopyComplete
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\jsonDb\obj\Debug\netcoreapp3.1\jsonDb.dll
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\jsonDb\obj\Debug\netcoreapp3.1\jsonDb.pdb

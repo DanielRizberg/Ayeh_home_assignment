@@ -32,7 +32,9 @@ namespace jsonDb
 
         private void loadData()
         {
-            dbObject = JsonConvert.DeserializeObject<dbObject>(File.ReadAllText(_filePath));
+            var text=File.ReadAllText(_filePath);
+            dbObject = JsonConvert.DeserializeObject<dbObject>(text);
+          
             dbObject.editState.AddRange(dbObject.initialState);
             updateJsonFile();
         }
