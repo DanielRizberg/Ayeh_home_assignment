@@ -1,1 +1,22 @@
-<p>data-grid works!</p>
+<table class="post-grid" id="grid">
+  <thead>
+    <tr>
+      <th></th>
+      <th>post title</th>
+      <th>Author</th>
+      <th># of comments</th>
+      <th>image</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of data">
+      <td><i class="fa fa-star" [ngClass]="{ checked: item.favorite }"></i></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>

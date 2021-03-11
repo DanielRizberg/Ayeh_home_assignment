@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { ApiService } from 'src/app/services/api.service';
+import { post } from 'src/app/models/post';
 
 @Component({
   selector: 'app-data-grid',
@@ -7,8 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataGridComponent implements OnInit {
 
-  constructor() { }
+  constructor(private apiService:ApiService) { }
 
+  data:post[];
   ngOnInit(): void {
   }
 
