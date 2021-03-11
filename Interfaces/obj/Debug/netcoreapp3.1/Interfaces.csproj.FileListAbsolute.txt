@@ -1,0 +1,12 @@
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\Interfaces\bin\Debug\netcoreapp3.1\Interfaces.deps.json
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\Interfaces\bin\Debug\netcoreapp3.1\Interfaces.dll
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\Interfaces\bin\Debug\netcoreapp3.1\Interfaces.pdb
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\Interfaces\bin\Debug\netcoreapp3.1\models.dll
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\Interfaces\bin\Debug\netcoreapp3.1\models.pdb
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\Interfaces\obj\Debug\netcoreapp3.1\Interfaces.csprojAssemblyReference.cache
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\Interfaces\obj\Debug\netcoreapp3.1\Interfaces.AssemblyInfoInputs.cache
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\Interfaces\obj\Debug\netcoreapp3.1\Interfaces.AssemblyInfo.cs
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\Interfaces\obj\Debug\netcoreapp3.1\Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\Interfaces\obj\Debug\netcoreapp3.1\Interfaces.csproj.CopyComplete
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\Interfaces\obj\Debug\netcoreapp3.1\Interfaces.dll
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\Interfaces\obj\Debug\netcoreapp3.1\Interfaces.pdb

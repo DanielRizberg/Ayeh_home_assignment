@@ -1,0 +1,9 @@
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\models\bin\Debug\netcoreapp3.1\models.deps.json
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\models\bin\Debug\netcoreapp3.1\models.dll
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\models\bin\Debug\netcoreapp3.1\models.pdb
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\models\obj\Debug\netcoreapp3.1\models.csprojAssemblyReference.cache
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\models\obj\Debug\netcoreapp3.1\models.AssemblyInfoInputs.cache
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\models\obj\Debug\netcoreapp3.1\models.AssemblyInfo.cs
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\models\obj\Debug\netcoreapp3.1\models.csproj.CoreCompileInputs.cache
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\models\obj\Debug\netcoreapp3.1\models.dll
+C:\Users\melts\Desktop\Ayehu\Ayeh_home_assignment\models\obj\Debug\netcoreapp3.1\models.pdb
