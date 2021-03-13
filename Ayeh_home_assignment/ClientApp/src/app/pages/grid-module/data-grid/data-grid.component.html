@@ -17,8 +17,8 @@
     <thead>
       <tr>
         <th></th>
-        <th class="pointer" [sort]="filterOp.title">post title <i *ngIf="query.sortProp==filterOp.title" class="fa fa-arrow-down " [ngClass]="{'fa-arrow-down':query.sortDir=='desc','fa-arrow-up':query.sortDir==='asc'}"></i></th>
-        <th class="pointer" [sort]="filterOp.author" >Author <i *ngIf="query.sortProp==filterOp.author" class="fa fa-arrow-down " [ngClass]="{'fa-arrow-down':query.sortDir=='desc','fa-arrow-up':query.sortDir==='asc'}"></i></th>
+        <th class="pointer" [sort]="filterOp.title">post title <app-arrow-view *ngIf="query.sortProp==filterOp.title" [query]="query"></app-arrow-view></th>
+        <th class="pointer" [sort]="filterOp.author" >Author <app-arrow-view [query]="query" *ngIf="query.sortProp==filterOp.author">  </app-arrow-view></th>
         <th># of comments</th>
         <th>image</th>
         <th></th>

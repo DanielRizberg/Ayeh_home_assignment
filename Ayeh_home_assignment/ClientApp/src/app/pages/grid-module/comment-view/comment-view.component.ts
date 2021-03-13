@@ -16,7 +16,7 @@ export class CommentViewComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.subs = this.activatedRoute.params.subscribe((x) => {
       let post_id = x['post_id'];
-      console.log(post_id);
+      //console.log(post_id);
     });
   }
   subs: Subscription;
