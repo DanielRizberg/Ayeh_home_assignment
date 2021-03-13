@@ -11,6 +11,7 @@ import { post } from '../models/post';
 })
 export class ApiService {
   constructor(private http: HttpClient) {}
+ public dir: string = '';
  public query: Subject<queryDto> = new Subject<queryDto>();
   getData(query: queryDto): Observable<DTO> {
     return this.http.post('db/getData', query).pipe(map((x) => x as DTO));
@@ -18,5 +19,13 @@ export class ApiService {
 
   deletePost(post:post){
    return this.http.post('db/deletePost',post).pipe(map(x=>x as boolean))
+  }
+
+  reset(){
+    return this.http.post('db/reset',{}).pipe(map((x) => x as DTO))
+  }
+  mark(post:post){
+   return this.http.post('db/mark',post).pipe(map(x=>x as boolean))
+
   }
 }

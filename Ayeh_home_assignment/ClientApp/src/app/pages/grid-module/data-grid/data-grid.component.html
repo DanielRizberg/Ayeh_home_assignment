@@ -17,8 +17,8 @@
     <thead>
       <tr>
         <th></th>
-        <th [sort]="filterOp.title">post title</th>
-        <th [sort]="filterOp.author">Author</th>
+        <th class="pointer" [sort]="filterOp.title">post title <i *ngIf="query.sortProp==filterOp.title" class="fa fa-arrow-down " [ngClass]="{'fa-arrow-down':query.sortDir=='desc','fa-arrow-up':query.sortDir==='asc'}"></i></th>
+        <th class="pointer" [sort]="filterOp.author" >Author <i *ngIf="query.sortProp==filterOp.author" class="fa fa-arrow-down " [ngClass]="{'fa-arrow-down':query.sortDir=='desc','fa-arrow-up':query.sortDir==='asc'}"></i></th>
         <th># of comments</th>
         <th>image</th>
         <th></th>
@@ -36,7 +36,7 @@
         <td>{{ item.comments.length }}</td>
 
         <td><img loading="lazy" [src]="getRandomImage()" alt="not found" /></td>
-        <td><i class="fa fa-trash"></i></td>
+        <td><i class="fa fa-trash" (click)="deletePost(item)"></i></td>
       </tr>
     </tbody>
   </table>

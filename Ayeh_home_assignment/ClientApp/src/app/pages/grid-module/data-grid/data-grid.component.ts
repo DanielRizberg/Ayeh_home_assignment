@@ -21,8 +21,9 @@ import { queryDto } from 'src/app/models/querydto';
   templateUrl: './data-grid.component.html',
   styleUrls: ['./data-grid.component.scss'],
 })
-export class DataGridComponent implements OnInit, OnDestroy, AfterViewInit,AfterViewChecked {
-  constructor(private apiService: ApiService,private cd:ChangeDetectorRef){}
+export class DataGridComponent
+  implements OnInit, OnDestroy, AfterViewInit, AfterViewChecked {
+  constructor(private apiService: ApiService, private cd: ChangeDetectorRef) {}
   ngAfterViewChecked(): void {
     this.cd.detectChanges();
   }
@@ -70,7 +71,7 @@ export class DataGridComponent implements OnInit, OnDestroy, AfterViewInit,After
   subs: Subscription;
   loading: boolean = false;
   query: queryDto = {
-    searchProp: filterOp.none,
+    searchProp: filterOp.authorAndTitle,
     searchVal: '',
     sortProp: filterOp.none,
     sortDir: 'asc',
@@ -110,11 +111,38 @@ export class DataGridComponent implements OnInit, OnDestroy, AfterViewInit,After
   }
 
   getRandomImage() {
-    
-    return `https://picsum.photos/150/150/?random&t=${new Date().getTime()}`;
+    let value= `https://picsum.photos/150/150/?random&t=${new Date().getTime()}`;
+  
+    return value;
   }
 
   public get filterOp(): typeof filterOp {
-    return filterOp; 
+    return filterOp;
+  }
+
+  deletePost(item: post) {
+    this.loading = true;
+    this.apiService.deletePost(item).subscribe((x) => {
+      if (x) {
+        this.getDataFromApi(this.query);
+      }
+      this.loading = false;
+    });
+  }
+  markPost(item: post) {
+    this.loading = true;
+    this.apiService.mark(item).subscribe((x) => {
+      if (x) {
+        this.getDataFromApi(this.query);
+      }
+      this.loading = false;
+    });
+  }
+  reset() {
+    this.loading = true;
+    this.apiService.reset().subscribe((x) => {
+      this.data = x.posts;
+      this.loading = false;
+    });
   }
 }
