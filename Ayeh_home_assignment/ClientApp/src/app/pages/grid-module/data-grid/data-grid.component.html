@@ -1,4 +1,4 @@
-<button class="button reset-button"  [disabled]="loading">reset</button>
+<button class="button reset-button" (click)="reset()" [disabled]="loading">reset</button>
 
 <div style="margin-top: 8px; margin-bottom: 8px; width: 100%">
   <label style="font-weight: bold; width: 25%">search by (Athor/title)</label>
@@ -27,7 +27,7 @@
     <tbody>
       <tr *ngFor="let item of data">
         <td>
-          <i class="fa fa-star" [ngClass]="{ checked: item.favorite }"></i>
+          <i (click)="markPost(item)" class="pointer fa fa-star" [ngClass]="{ checked: item.favorite }"></i>
         </td>
         <td>
           <a>{{ item.title }}</a>
@@ -36,7 +36,7 @@
         <td>{{ item.comments.length }}</td>
 
         <td><img loading="lazy" [src]="getRandomImage()" alt="not found" /></td>
-        <td><i class="fa fa-trash" (click)="deletePost(item)"></i></td>
+        <td><i class="pointer fa fa-trash" (click)="deletePost(item)"></i></td>
       </tr>
     </tbody>
   </table>
