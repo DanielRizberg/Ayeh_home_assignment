@@ -33,7 +33,7 @@
           {{ item.title }}
         </td>
         <td>{{ item.author }}</td>
-        <td> <a [routerLink]="['comment',item.id]">{{ item.comments.length }}</a></td>
+        <td> <a [routerLink]="['/main/comment',item.id]">{{ item.comments.length }}</a></td>
 
         <td><img loading="lazy" [src]="getRandomImage()" alt="not found" /></td>
         <td><i class="pointer fa fa-trash" (click)="deletePost(item)"></i></td>
