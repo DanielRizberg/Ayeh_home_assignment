@@ -1,36 +1,45 @@
-<button class="button reset-button">reset</button>
+<ng-container *ngIf="loading; else loadingTemplate">
+  <button class="button reset-button">reset</button>
 
-<div style="margin-top: 8px; margin-bottom: 8px;width: 100%;">
-  <label style="font-weight: bold;width: 25%;">search by (Athor/title)</label>
-  &nbsp;&nbsp;
-  <input #searchText
-    class="search-input"
-    placeholder="type somthing to filter data"
-    type="text"
-  />
-</div>
-<table class="post-grid" id="grid">
-  <thead>
-    <tr>
-      <th></th>
-      <th>post title</th>
-      <th>Author</th>
-      <th># of comments</th>
-      <th>image</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let item of data">
-      <td><i class="fa fa-star" [ngClass]="{ checked: item.favorite }"></i></td>
-      <td>
-        <a>{{ item.title }}</a>
-      </td>
-      <td>{{ item.author }}</td>
-      <td>{{ item.comments.length }}</td>
+  <div style="margin-top: 8px; margin-bottom: 8px; width: 100%">
+    <label style="font-weight: bold; width: 25%">search by (Athor/title)</label>
+    &nbsp;&nbsp;
+    <input
+      #searchText
+      class="search-input"
+      placeholder="type somthing to filter data"
+      type="text"
+    />
+  </div>
+  <table class="post-grid" id="grid">
+    <thead>
+      <tr>
+        <th></th>
+        <th>post title</th>
+        <th>Author</th>
+        <th># of comments</th>
+        <th>image</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data">
+        <td>
+          <i class="fa fa-star" [ngClass]="{ checked: item.favorite }"></i>
+        </td>
+        <td>
+          <a>{{ item.title }}</a>
+        </td>
+        <td>{{ item.author }}</td>
+        <td>{{ item.comments.length }}</td>
 
-      <td><img loading="lazy" [src]="getRandomImage()" alt="not found" /></td>
-      <td><i class="fa fa-trash"></i></td>
-    </tr>
-  </tbody>
-</table>
+        <td><img loading="lazy" [src]="getRandomImage()" alt="not found" /></td>
+        <td><i class="fa fa-trash"></i></td>
+      </tr>
+    </tbody>
+  </table>
+</ng-container>
+
+<ng-template #loadingTemplate>
+  <div class="loader" style="margin: auto"></div>
+</ng-template>

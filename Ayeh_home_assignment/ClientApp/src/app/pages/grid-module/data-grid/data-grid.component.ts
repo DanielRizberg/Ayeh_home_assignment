@@ -4,6 +4,7 @@ import {
   OnDestroy,
   ViewChild,
   AfterViewInit,
+  ElementRef,
 } from '@angular/core';
 import { ApiService } from 'src/app/services/api.service';
 import { post } from 'src/app/models/post';
@@ -11,6 +12,7 @@ import { filterOp } from 'src/app/models/filterOp';
 import { Subscription, fromEvent } from 'rxjs';
 import { filter, debounceTime } from 'rxjs/operators';
 import { ThrowStmt } from '@angular/compiler';
+import { queryDto } from 'src/app/models/querydto';
 
 @Component({
   selector: 'app-data-grid',
@@ -19,20 +21,21 @@ import { ThrowStmt } from '@angular/compiler';
 })
 export class DataGridComponent implements OnInit, OnDestroy, AfterViewInit {
   constructor(private apiService: ApiService) {}
-  ngAfterViewInit(): void {
-    this.subs = fromEvent(this.searchText, 'input')
+  private handleTypeEvent() {
+    this.subs = fromEvent(this.searchText.nativeElement, 'input')
       .pipe(
-        filter((x) => (x.target as any).value.length >= 3),
+        filter((x) => (x as any).target.value.length >= 3),
         debounceTime(5000)
       )
       .subscribe((x) => {
-        let value = (x.target as any).value;
+        let value = (x as any).target.value;
         if (value) {
+          this.query.searchVal = value;
           let request = {
-            sortDir: 'asc',
+            sortDir: this.query.sortDir,
             searchProp: filterOp.authorAndTitle,
             searchVal: value,
-            sortProp: filterOp.none,
+            sortProp: this.query.sortProp,
           };
           this.getDataFromApi(request);
         } else {
@@ -40,27 +43,51 @@ export class DataGridComponent implements OnInit, OnDestroy, AfterViewInit {
         }
       });
   }
+
+  ngAfterViewInit(): void {
+    this.handleTypeEvent();
+    this.handleSortEvent();
+  }
+  private handleSortEvent() {
+    this.subs.add(
+      this.apiService.query.subscribe((x) => {
+        this.query.sortDir = x.sortDir;
+        this.query.sortProp = x.searchProp;
+        this.getDataFromApi(this.query);
+      })
+    );
+  }
+
   ngOnDestroy(): void {
     this.subs.unsubscribe();
   }
   subs: Subscription;
-  @ViewChild('searchText') searchText: HTMLInputElement;
+  loading: boolean = false;
+  query: queryDto = {
+    searchProp: filterOp.none,
+    searchVal: '',
+    sortProp: filterOp.none,
+    sortDir: 'asc',
+  };
+  @ViewChild('searchText') searchText: ElementRef;
   data: post[];
   ngOnInit(): void {
     this.loadData();
   }
 
   private loadData() {
+    this.loading = true;
     let request = this.getAllDataRequest();
     this.getDataFromApi(request);
+    this.loading = false;
   }
 
   private getAllDataRequest() {
     return {
-      sortDir: 'asc',
       searchProp: filterOp.none,
       searchVal: '',
       sortProp: filterOp.none,
+      sortDir: 'asc',
     };
   }
 
@@ -70,7 +97,9 @@ export class DataGridComponent implements OnInit, OnDestroy, AfterViewInit {
     searchVal: string;
     sortProp: filterOp;
   }) {
+    this.loading = true;
     this.apiService.getData(request).subscribe((x) => (this.data = x.posts));
+    this.loading = false;
   }
 
   getRandomImage() {
