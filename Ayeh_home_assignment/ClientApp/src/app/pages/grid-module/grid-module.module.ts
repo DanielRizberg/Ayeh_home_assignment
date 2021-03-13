@@ -7,11 +7,11 @@ import { SortDirective } from 'src/app/directive/sort.directive';
 
 
 @NgModule({
-  declarations: [DataGridComponent,SortDirective],
+  declarations: [DataGridComponent],
   imports: [
     CommonModule,
     GridModuleRoutingModule
   ],
-
+providers:[SortDirective]
 })
 export class GridModuleModule { }
