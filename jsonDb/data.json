@@ -25,6 +25,12 @@
           "name": "john",
           "email": "d@gmail.com",
           "body": "like this"
+        },
+        {
+          "id": 2,
+          "name": "john",
+          "email": "d@gmail.com",
+          "body": "like this"
         }
       ]
     },
@@ -119,7 +125,20 @@
       "author": "daniel",
       "title": "star trek",
       "favorite": true,
-      "comments": []
+      "comments": [
+        {
+          "id": 1,
+          "name": "john",
+          "email": "d@gmail.com",
+          "body": "like this"
+        },
+        {
+          "id": 2,
+          "name": "john",
+          "email": "d@gmail.com",
+          "body": "like this"
+        }
+      ]
     },
     {
       "id": 3,
