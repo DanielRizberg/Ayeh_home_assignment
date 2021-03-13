@@ -17,7 +17,8 @@ namespace models
     {
         author,
         title,
-        none
+        none,
+        authorAndTitle
     }
 }
   

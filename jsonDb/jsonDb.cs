@@ -16,7 +16,7 @@ namespace jsonDb
         {
             {filterOp.author,(x,y)=>x.author.Contains(y.searchVal) } ,
             {filterOp.title,(x,y)=>x.title.Contains(y.searchVal) } ,
-             {filterOp.title,(x,y)=>x.title.Contains(y.searchVal) ||x.author.Contains(y.searchVal) } ,
+             {filterOp.authorAndTitle,(x,y)=>x.title.Contains(y.searchVal) ||x.author.Contains(y.searchVal) } ,
         };
         Dictionary<filterOp, Func<post, object>> sortMap = new Dictionary<filterOp, Func<post, object>>
         {
