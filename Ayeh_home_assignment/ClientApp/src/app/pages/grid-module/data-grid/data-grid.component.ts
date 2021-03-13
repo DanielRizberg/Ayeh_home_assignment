@@ -130,6 +130,7 @@ export class DataGridComponent
     });
   }
   markPost(item: post) {
+    item.favorite=!item.favorite;
     this.loading = true;
     this.apiService.mark(item).subscribe((x) => {
       if (x) {
