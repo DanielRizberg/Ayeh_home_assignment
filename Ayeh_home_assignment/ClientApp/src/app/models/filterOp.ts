@@ -1,5 +1,6 @@
 export enum filterOp {
     author,
     title,
-    none
+    none,
+    authorAndTitle
 }
