@@ -13,6 +13,7 @@ export class SortDirective {
   dir: string = '';
   @HostListener('click')
   click() {
+    console.log(this.sort)
     let dir = this.dir;
     dir = this.handleDirction(dir);
     this.ApiService.query.next({

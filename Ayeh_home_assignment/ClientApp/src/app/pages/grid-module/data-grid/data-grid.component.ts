@@ -5,6 +5,8 @@ import {
   ViewChild,
   AfterViewInit,
   ElementRef,
+  AfterViewChecked,
+  ChangeDetectorRef,
 } from '@angular/core';
 import { ApiService } from 'src/app/services/api.service';
 import { post } from 'src/app/models/post';
@@ -19,9 +21,13 @@ import { queryDto } from 'src/app/models/querydto';
   templateUrl: './data-grid.component.html',
   styleUrls: ['./data-grid.component.scss'],
 })
-export class DataGridComponent implements OnInit, OnDestroy, AfterViewInit {
-  constructor(private apiService: ApiService) {}
+export class DataGridComponent implements OnInit, OnDestroy, AfterViewInit,AfterViewChecked {
+  constructor(private apiService: ApiService,private cd:ChangeDetectorRef){}
+  ngAfterViewChecked(): void {
+    this.cd.detectChanges();
+  }
   private handleTypeEvent() {
+    setTimeout;
     this.subs = fromEvent(this.searchText.nativeElement, 'input')
       .pipe(
         filter((x) => (x as any).target.value.length >= 3),
@@ -79,7 +85,6 @@ export class DataGridComponent implements OnInit, OnDestroy, AfterViewInit {
     this.loading = true;
     let request = this.getAllDataRequest();
     this.getDataFromApi(request);
-    this.loading = false;
   }
 
   private getAllDataRequest() {
@@ -98,11 +103,18 @@ export class DataGridComponent implements OnInit, OnDestroy, AfterViewInit {
     sortProp: filterOp;
   }) {
     this.loading = true;
-    this.apiService.getData(request).subscribe((x) => (this.data = x.posts));
-    this.loading = false;
+    this.apiService.getData(request).subscribe((x) => {
+      this.data = x.posts;
+      this.loading = false;
+    });
   }
 
   getRandomImage() {
+    
     return `https://picsum.photos/150/150/?random&t=${new Date().getTime()}`;
+  }
+
+  public get filterOp(): typeof filterOp {
+    return filterOp; 
   }
 }

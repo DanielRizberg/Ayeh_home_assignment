@@ -1,22 +1,24 @@
-<ng-container *ngIf="loading else loadingTemplate">
-  <button class="button reset-button">reset</button>
+<button class="button reset-button"  [disabled]="loading">reset</button>
 
-  <div style="margin-top: 8px; margin-bottom: 8px; width: 100%">
-    <label style="font-weight: bold; width: 25%">search by (Athor/title)</label>
-    &nbsp;&nbsp;
-    <input
-      #searchText
-      class="search-input"
-      placeholder="type somthing to filter data"
-      type="text"
-    />
-  </div>
+<div style="margin-top: 8px; margin-bottom: 8px; width: 100%">
+  <label style="font-weight: bold; width: 25%">search by (Athor/title)</label>
+  &nbsp;&nbsp;
+  <input
+    #searchText
+    class="search-input"
+    placeholder="type somthing to filter data"
+    type="text"
+    [disabled]="loading"
+  />
+</div>
+<ng-container *ngIf="!loading else loadingTemplate">
+ 
   <table class="post-grid" id="grid">
     <thead>
       <tr>
         <th></th>
-        <th>post title</th>
-        <th>Author</th>
+        <th [sort]="filterOp.title">post title</th>
+        <th [sort]="filterOp.author">Author</th>
         <th># of comments</th>
         <th>image</th>
         <th></th>

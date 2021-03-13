@@ -7,7 +7,7 @@ import { SortDirective } from 'src/app/directive/sort.directive';
 
 
 @NgModule({
-  declarations: [DataGridComponent],
+  declarations: [DataGridComponent,SortDirective],
   imports: [
     CommonModule,
     GridModuleRoutingModule
