@@ -12,6 +12,6 @@ import { SortDirective } from 'src/app/directive/sort.directive';
     CommonModule,
     GridModuleRoutingModule
   ],
-providers:[SortDirective]
+providers:[]
 })
 export class GridModuleModule { }

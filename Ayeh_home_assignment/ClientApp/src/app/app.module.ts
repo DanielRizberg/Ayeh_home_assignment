@@ -8,8 +8,8 @@ import {HttpClientModule} from '@angular/common/http';
 import { SortDirective } from './directive/sort.directive';
 @NgModule({
   declarations: [
-    AppComponent,
-    SortDirective
+    AppComponent
+    
   ],
   imports: [
     BrowserModule,

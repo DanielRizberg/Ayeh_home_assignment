@@ -1,6 +1,5 @@
 import { Directive, Input, HostListener } from '@angular/core';
-import { Subject } from 'rxjs';
-import { queryDto } from '../models/querydto';
+
 import { filterOp } from '../models/filterOp';
 import { ApiService } from '../services/api.service';
 @Directive({
@@ -18,7 +17,7 @@ export class SortDirective {
     dir = this.handleDirction(dir);
     this.ApiService.query.next({
       sortDir: dir,
-      sortProp:dir? this.sort:null,
+      sortProp:dir? this.sort:filterOp.none,
       searchProp: null,
       searchVal: null,
     });

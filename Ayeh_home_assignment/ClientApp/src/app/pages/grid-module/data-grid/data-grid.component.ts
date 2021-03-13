@@ -58,7 +58,7 @@ export class DataGridComponent implements OnInit, OnDestroy, AfterViewInit,After
     this.subs.add(
       this.apiService.query.subscribe((x) => {
         this.query.sortDir = x.sortDir;
-        this.query.sortProp = x.searchProp;
+        this.query.sortProp = x.sortProp;
         this.getDataFromApi(this.query);
       })
     );
