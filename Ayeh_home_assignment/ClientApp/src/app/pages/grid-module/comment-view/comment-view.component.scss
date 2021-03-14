@@ -2,8 +2,8 @@
     border: 1px solid lightblue;
     padding: 8px;
     margin: 8px;
-    max-height: 70vh;;
-    overflow-y: auto;
+    display: block;
+    
     
 }
 .button {
@@ -12,12 +12,12 @@
     color: white;
     padding: 4px 30px;
     text-decoration: none;
-    display: block;
+   
     font-size: 16px;
     margin: 8px;
     transition-duration: 0.4s;
     cursor: pointer;
-    float: right;
+  
   }
   .button:active{
     background-color: white;

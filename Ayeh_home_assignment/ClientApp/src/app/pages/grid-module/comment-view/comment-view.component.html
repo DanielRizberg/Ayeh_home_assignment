@@ -1,30 +1,52 @@
-
-<ng-container *ngIf="!loading else loadingTemplate">
-    <h1 class="text">{{post?.title}}</h1>
-    <h5 >Comments:</h5>
+<ng-container *ngIf="!loading; else loadingTemplate">
+  <h1 class="text">{{ post?.title }}</h1>
+  <h5>Comments:</h5>
+  <div style="max-height: 60vh; overflow-y: auto">
     <ng-container *ngFor="let item of post?.comments">
-        <div class="comment" >
-            <u><a [href]="'mailto:'+item.email">{{item.email}}</a></u>
-            <p>{{item.body}}</p>
+      <div style="display: flex; flex-direction: row">
+        <div class="comment" style="flex: auto">
+          <u
+            ><a [href]="'mailto:' + item.email">{{ item.email }}</a></u
+          >
+          <p>{{ item.body }}</p>
         </div>
-        <button class="button">Delete</button>
+      </div>
+
+      <div
+        style="display: flex; flex-direction: row; justify-content: flex-end"
+      >
+        <button
+          style="text-align: right ;"
+          (click)="remove(item)"
+          class="button"
+        >
+          Delete
+        </button>
+      </div>
     </ng-container>
-    <h4><u>add Comment:</u></h4>
-    <div style="display:flex;flex-direction:row">
-        <span >Name:</span> <input style="flex:1" [(ngModel)]="comment.name" type="text">
-    </div>
-    <br>
-    <div style="display:flex;flex-direction:row">
-        <span >Email:</span> <input style="flex:1" [(ngModel)]="comment.email" type="text">
-    </div>
-    <br>
-    <div style="display:flex;flex-direction:row">
-        <span >Body:</span> <input style="flex:1" [(ngModel)]="comment.body" type="text">
-    </div>
-    <br>
+  </div>
+
+  <h4><u>add Comment:</u></h4>
+  <div style="display: flex; flex-direction: row">
+    <span>Name:</span>
+    <input style="flex: 1" [(ngModel)]="comment.name" type="text" />
+  </div>
+  <br />
+  <div style="display: flex; flex-direction: row">
+    <span>Email:</span>
+    <input style="flex: 1" [(ngModel)]="comment.email" type="text" />
+  </div>
+  <br />
+  <div style="display: flex; flex-direction: row">
+    <span>Body:</span>
+    <input style="flex: 1" [(ngModel)]="comment.body" type="text" />
+  </div>
+  <br />
+  <div style="display: flex; flex-direction: row; justify-content: flex-end">
     <button class="button" (click)="add()">Save</button>
+  </div>
 </ng-container>
 
 <ng-template #loadingTemplate>
-    <div class="loader" style="margin: auto"></div>
-  </ng-template>
+  <div class="loader" style="margin: auto"></div>
+</ng-template>

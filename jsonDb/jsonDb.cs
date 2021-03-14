@@ -36,7 +36,7 @@ namespace jsonDb
             var text = File.ReadAllText(_filePath);
             dbObject = JsonConvert.DeserializeObject<dbObject>(text);
             dbObject.editState = new List<post>();
-            dbObject.editState.AddRange(dbObject.initialState);
+            dbObject.editState.AddRange(dbObject.initialState.Clone());
             updateJsonFile();
         }
 
@@ -130,7 +130,7 @@ namespace jsonDb
         public DTO reset()
         {
             dbObject.editState.Clear();
-            dbObject.editState.AddRange(dbObject.initialState);
+            dbObject.editState.AddRange(dbObject.initialState.Clone());
             updateJsonFile();
             return getData(new queryDto { searchProp = filterOp.none, sortProp = filterOp.none, sortDir = "asc" });
         }

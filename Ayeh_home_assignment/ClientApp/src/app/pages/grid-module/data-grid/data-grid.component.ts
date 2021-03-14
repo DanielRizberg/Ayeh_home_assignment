@@ -140,10 +140,21 @@ export class DataGridComponent
     });
   }
   reset() {
+   this.resetComponentData();
     this.loading = true;
     this.apiService.reset().subscribe((x) => {
       this.data = x.posts;
       this.loading = false;
     });
+  }
+
+  private resetComponentData() {
+    (this.searchText.nativeElement as HTMLInputElement).value = "";
+    this.query = {
+      searchProp: filterOp.authorAndTitle,
+      searchVal: '',
+      sortProp: filterOp.none,
+      sortDir: 'asc',
+    };
   }
 }
