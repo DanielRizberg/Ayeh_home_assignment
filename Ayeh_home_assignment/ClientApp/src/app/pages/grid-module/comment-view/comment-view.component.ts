@@ -3,6 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { post } from 'src/app/models/post';
 import { ApiService } from 'src/app/services/api.service';
+import { comment } from 'src/app/models/comment';
+import { commentDto } from 'src/app/models/commentsDTO';
 
 @Component({
   selector: 'app-comment-view',
@@ -18,7 +20,8 @@ export class CommentViewComponent implements OnInit, OnDestroy {
     this.subs.unsubscribe();
   }
   post: post;
-  loading: boolean = false;
+  comment: comment = { id: 0, email: '', name: '', body: '' };
+  loading: boolean = true;
   ngOnInit(): void {
     this.subs = this.activatedRoute.params.subscribe((x) => {
       let post_id = x['post_id'];
@@ -34,5 +37,25 @@ export class CommentViewComponent implements OnInit, OnDestroy {
       this.post = x;
       this.loading = false;
     });
+  }
+  add(){
+    this.loading=true;
+    let req:commentDto={postId:this.post.id,...this.comment}
+    this.apiService.addComment(req).subscribe(x=>{
+      if (x) {
+        this.loading=false;
+        this.getData(this.post.id)
+      }
+    })
+  }
+  remove(comment:comment){
+    this.loading=true;
+    let req:commentDto={postId:this.post.id,...comment}
+    this.apiService.deleteCooment(req).subscribe(x=>{
+      if (x) {
+        this.loading=false;
+        this.getData(this.post.id)
+      }
+    })
   }
 }

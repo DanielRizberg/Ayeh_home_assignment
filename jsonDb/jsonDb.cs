@@ -135,19 +135,29 @@ namespace jsonDb
             return getData(new queryDto { searchProp = filterOp.none, sortProp = filterOp.none, sortDir = "asc" });
         }
 
-        public commentsDTO getCommentsById(post post)
+      public  post getPostById(post post)
         {
-            commentsDTO retVal;
+            post retVal;
             var obj = dbObject.editState.Where(x => x.id == post.id).FirstOrDefault();
-            if (obj != null)
-            {
-                retVal = new commentsDTO { comments = obj.comments };
-            }
-            else
-            {
-                retVal = retVal = new commentsDTO { comments = new List<comment>() }; ;
-            }
+            retVal = obj;
 
+            return retVal;
+        }
+
+        public bool addComment(commentDto commentDto)
+        {
+            bool retVal = false;
+            var post = dbObject.editState.Where(x => x.id == commentDto.postId).FirstOrDefault();
+            if (post == null)
+            {
+                return retVal;
+            }
+            var id = post.comments.Max(x => x.id)+1;
+            commentDto.id = id;
+                 post.comments.Add(commentDto);
+                retVal = true;
+            
+            updateJsonFile();
             return retVal;
         }
     }

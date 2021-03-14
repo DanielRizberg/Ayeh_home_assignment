@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RwTc8tsZmIpmr8H2fgmlEAX8DtTadLrnOYAxtGPg1SWVekqEWuVjDYjly/X3koFH/5r//5DkytRGmJcXjEJLIw==",
+  "dgSpecHash": "qYwGFsiwey1Ycx7Etqfz16XvGJXfrZkyV7YTEfv1I7rjW4gqz52OfYkQhlsBgeuiV6wSxsUjn5B9I/3PDcV9ew==",
   "success": true,
-  "projectFilePath": "c:\\stam\\Ayeh_home_assignment\\models\\models.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.8\\microsoft.aspnetcore.app.ref.3.1.8.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\models\\models.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

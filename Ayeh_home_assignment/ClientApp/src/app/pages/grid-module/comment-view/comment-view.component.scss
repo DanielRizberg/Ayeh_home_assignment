@@ -1,0 +1,36 @@
+.comment{
+    border: 1px solid lightblue;
+    padding: 8px;
+    margin: 8px;
+    max-height: 70vh;;
+    overflow-y: auto;
+    
+}
+.button {
+    background-color: #42a5f5 ;
+    border: none;
+    color: white;
+    padding: 4px 30px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 8px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    float: right;
+  }
+  .button:active{
+    background-color: white;
+    color: black;
+}
+  .text{
+    color: #42a5f5;
+  }
+  input{
+    border: none;
+    width:max-content;
+  }
+  input:focus{
+      outline: none;
+      
+  }

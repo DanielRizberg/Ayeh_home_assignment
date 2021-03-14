@@ -1,7 +1,6 @@
-import { comment } from "./comment";
+import { comment } from './comment';
 
 
-
-export interface commentsDTO {
-    comments: comment[];
+export interface commentDto extends comment {
+    postId:number;
 }

@@ -13,5 +13,7 @@ namespace Interfaces
         bool markPost(post post);
         DTO reset();
         post getPostById(post post);
+
+        bool addComment(commentDto commentDto);
     }
 }

@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yKrhrQ2Y9RhuOJpA3gmogjRqzesgEM2ccAVQjytj2fysQy6pLi83HdJShNA6Kfn4+M3onDwsigrkSI/PnJh4NQ==",
+  "dgSpecHash": "B576Wc8snv6pS8rYWHqtJ3oBd4qV1XYeedl9/ooQnPdO9Vjz3YzUS5l6aApIX3AGV42cYnb/tTwTH3RaAqVITA==",
   "success": true,
-  "projectFilePath": "c:\\stam\\Ayeh_home_assignment\\Interfaces\\Interfaces.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.8\\microsoft.aspnetcore.app.ref.3.1.8.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\Interfaces\\Interfaces.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

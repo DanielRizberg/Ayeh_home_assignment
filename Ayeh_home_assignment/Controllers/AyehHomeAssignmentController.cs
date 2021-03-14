@@ -65,6 +65,17 @@ namespace Ayeh_home_assignment.Controllers
             return reaultCreator(dbResult);
 
         }
+        [Route("addComment")]
+        [HttpPost]
+        public ObjectResult addComment(commentDto comment)
+        {
+            var dbResult = _db.addComment(comment);
+
+            return reaultCreator(dbResult);
+
+        }
+
+
         private ObjectResult reaultCreator<T>(T Input)
         {
             return new ObjectResult(Input);
