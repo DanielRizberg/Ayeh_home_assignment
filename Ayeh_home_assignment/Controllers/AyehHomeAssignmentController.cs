@@ -56,11 +56,11 @@ namespace Ayeh_home_assignment.Controllers
             return reaultCreator(dbResult);
 
         }
-         [Route("commentsById")]
+         [Route("postById")]
         [HttpPost]
         public ObjectResult commentsById(post post)
         {
-            var dbResult = _db.getCommentsById(post);
+            var dbResult = _db.getPostById(post);
          
             return reaultCreator(dbResult);
 

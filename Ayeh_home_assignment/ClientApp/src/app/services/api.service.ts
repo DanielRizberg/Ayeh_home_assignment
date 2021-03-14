@@ -29,7 +29,7 @@ export class ApiService {
    return this.http.post('db/mark',post).pipe(map(x=>x as boolean))
 
   }
-  getCommentsById(postId:number){
-    return this.http.post('db/getData', {id:postId}).pipe(map((x) => x as commentsDTO));
+  getPostById(postId:number){
+    return this.http.post('db/postById', {id:postId}).pipe(map((x) => x as post));
   }
 }
