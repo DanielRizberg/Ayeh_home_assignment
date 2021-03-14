@@ -56,7 +56,15 @@ namespace Ayeh_home_assignment.Controllers
             return reaultCreator(dbResult);
 
         }
+         [Route("postById")]
+        [HttpPost]
+        public ObjectResult commentsById(post post)
+        {
+            var dbResult = _db.getPostById(post);
+         
+            return reaultCreator(dbResult);
 
+        }
         private ObjectResult reaultCreator<T>(T Input)
         {
             return new ObjectResult(Input);

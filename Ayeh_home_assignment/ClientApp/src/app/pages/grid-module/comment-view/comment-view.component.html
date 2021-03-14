@@ -1,1 +1,8 @@
-<p>comment-view works!</p>
+
+<ng-container *ngIf="loading else loadingTemplate">
+    <h2>{{post.title}}</h2>
+</ng-container>
+
+<ng-template #loadingTemplate>
+    <div class="loader" style="margin: auto"></div>
+  </ng-template>

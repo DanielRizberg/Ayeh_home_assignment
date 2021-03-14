@@ -32,7 +32,7 @@ export class DataGridComponent
     this.subs = fromEvent(this.searchText.nativeElement, 'input')
       .pipe(
         filter((x) => (x as any).target.value.length >= 3),
-        debounceTime(5000)
+        debounceTime(3000)
       )
       .subscribe((x) => {
         let value = (x as any).target.value;

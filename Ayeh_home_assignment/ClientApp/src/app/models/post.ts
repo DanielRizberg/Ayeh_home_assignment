@@ -6,3 +6,5 @@ export interface post {
     favorite: boolean;
     comments: comment[];
 }
+
+

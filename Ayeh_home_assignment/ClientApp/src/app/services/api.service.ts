@@ -6,6 +6,7 @@ import { queryDto } from '../models/querydto';
 import { Observable, Subject } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { post } from '../models/post';
+import { commentsDTO } from '../models/commentsDTO';
 @Injectable({
   providedIn: 'root',
 })
@@ -27,5 +28,8 @@ export class ApiService {
   mark(post:post){
    return this.http.post('db/mark',post).pipe(map(x=>x as boolean))
 
+  }
+  getPostById(postId:number){
+    return this.http.post('db/postById', {id:postId}).pipe(map((x) => x as post));
   }
 }
