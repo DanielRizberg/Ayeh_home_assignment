@@ -1,39 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\jsonDb\\jsonDb.csproj": {}
+    "c:\\stam\\Ayeh_home_assignment\\jsonDb\\jsonDb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\Interfaces\\Interfaces.csproj": {
+    "c:\\stam\\Ayeh_home_assignment\\Interfaces\\Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\Interfaces\\Interfaces.csproj",
+        "projectUniqueName": "c:\\stam\\Ayeh_home_assignment\\Interfaces\\Interfaces.csproj",
         "projectName": "Interfaces",
-        "projectPath": "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\Interfaces\\Interfaces.csproj",
-        "packagesPath": "C:\\Users\\melts\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\Interfaces\\obj\\",
+        "projectPath": "c:\\stam\\Ayeh_home_assignment\\Interfaces\\Interfaces.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "c:\\stam\\Ayeh_home_assignment\\Interfaces\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\melts\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\models\\models.csproj": {
-                "projectPath": "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\models\\models.csproj"
+              "c:\\stam\\Ayeh_home_assignment\\models\\models.csproj": {
+                "projectPath": "c:\\stam\\Ayeh_home_assignment\\models\\models.csproj"
               }
             }
           }
@@ -57,6 +51,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.8, 3.1.8]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -66,39 +74,33 @@
         }
       }
     },
-    "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\jsonDb\\jsonDb.csproj": {
+    "c:\\stam\\Ayeh_home_assignment\\jsonDb\\jsonDb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\jsonDb\\jsonDb.csproj",
+        "projectUniqueName": "c:\\stam\\Ayeh_home_assignment\\jsonDb\\jsonDb.csproj",
         "projectName": "jsonDb",
-        "projectPath": "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\jsonDb\\jsonDb.csproj",
-        "packagesPath": "C:\\Users\\melts\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\jsonDb\\obj\\",
+        "projectPath": "c:\\stam\\Ayeh_home_assignment\\jsonDb\\jsonDb.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "c:\\stam\\Ayeh_home_assignment\\jsonDb\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\melts\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\Interfaces\\Interfaces.csproj": {
-                "projectPath": "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\Interfaces\\Interfaces.csproj"
+              "c:\\stam\\Ayeh_home_assignment\\Interfaces\\Interfaces.csproj": {
+                "projectPath": "c:\\stam\\Ayeh_home_assignment\\Interfaces\\Interfaces.csproj"
               },
-              "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\models\\models.csproj": {
-                "projectPath": "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\models\\models.csproj"
+              "c:\\stam\\Ayeh_home_assignment\\models\\models.csproj": {
+                "projectPath": "c:\\stam\\Ayeh_home_assignment\\models\\models.csproj"
               }
             }
           }
@@ -128,6 +130,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.8, 3.1.8]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -137,28 +153,22 @@
         }
       }
     },
-    "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\models\\models.csproj": {
+    "c:\\stam\\Ayeh_home_assignment\\models\\models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\models\\models.csproj",
+        "projectUniqueName": "c:\\stam\\Ayeh_home_assignment\\models\\models.csproj",
         "projectName": "models",
-        "projectPath": "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\models\\models.csproj",
-        "packagesPath": "C:\\Users\\melts\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\models\\obj\\",
+        "projectPath": "c:\\stam\\Ayeh_home_assignment\\models\\models.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "c:\\stam\\Ayeh_home_assignment\\models\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\melts\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -186,6 +196,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.8, 3.1.8]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

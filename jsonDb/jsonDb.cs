@@ -8,7 +8,7 @@ using models;
 using Newtonsoft.Json;
 namespace jsonDb
 {
-    public class jsonDb: IAyehJsonDb
+    public class jsonDb : IAyehJsonDb
     {
         string _filePath;
         dbObject dbObject;
@@ -33,7 +33,7 @@ namespace jsonDb
 
         private void loadData()
         {
-            var text=File.ReadAllText(_filePath);
+            var text = File.ReadAllText(_filePath);
             dbObject = JsonConvert.DeserializeObject<dbObject>(text);
             dbObject.editState = new List<post>();
             dbObject.editState.AddRange(dbObject.initialState);
@@ -132,7 +132,23 @@ namespace jsonDb
             dbObject.editState.Clear();
             dbObject.editState.AddRange(dbObject.initialState);
             updateJsonFile();
-            return getData(new queryDto { searchProp = filterOp.none, sortProp = filterOp.none,sortDir="asc" });
+            return getData(new queryDto { searchProp = filterOp.none, sortProp = filterOp.none, sortDir = "asc" });
+        }
+
+        public commentsDTO getCommentsById(post post)
+        {
+            commentsDTO retVal;
+            var obj = dbObject.editState.Where(x => x.id == post.id).FirstOrDefault();
+            if (obj != null)
+            {
+                retVal = new commentsDTO { comments = obj.comments };
+            }
+            else
+            {
+                retVal = retVal = new commentsDTO { comments = new List<comment>() }; ;
+            }
+
+            return retVal;
         }
     }
 }

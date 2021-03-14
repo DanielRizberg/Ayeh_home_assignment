@@ -12,5 +12,6 @@ namespace Interfaces
        bool deleteComment(commentDto commentDeleteDto);
         bool markPost(post post);
         DTO reset();
+        commentsDTO getCommentsById(post post);
     }
 }

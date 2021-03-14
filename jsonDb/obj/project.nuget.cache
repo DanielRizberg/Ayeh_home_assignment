@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Ag/uKDPyBrnn3bgdxdwGLXIEi7jseZuSPX2RGLAM4+GoX6aa515fw1hqrtEWuIbuAopPhuzFO8bmJZSb8EifCA==",
+  "dgSpecHash": "jEmNm4reWIIZk+uAosIw8lUk3YubUn0Ea9TLWNuPA9AfcfNcy/642FjJgnI3xI3Szm/CVFlKK7UWHli8WbaGqQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\melts\\Desktop\\Ayehu\\Ayeh_home_assignment\\jsonDb\\jsonDb.csproj",
+  "projectFilePath": "c:\\stam\\Ayeh_home_assignment\\jsonDb\\jsonDb.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\melts\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+    "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.8\\microsoft.aspnetcore.app.ref.3.1.8.nupkg.sha512"
   ],
   "logs": []
 }
